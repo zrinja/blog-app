@@ -1,0 +1,27 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{modalTitle}} blog post</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="dismisModal('Cross click')">X</button>
+</div>
+<div class="modal-container">
+    <form [formGroup]="blogPostForm" (ngSubmit)="submitForm()">
+        <div>
+          <label for="title" class="label">Title</label>
+          <input type="text" id="title" formControlName="title" [ngClass]="title.touched && title.invalid?'error-border':''"/>
+          <div *ngIf="title.touched && title.invalid">
+            <div>Title is required</div>
+          </div>
+        </div>
+      
+        <div>
+          <label for="text" class="label">Text</label>
+          <textarea id="text" formControlName="text" [ngClass]="text.touched && text.invalid?'error-border':''"></textarea>
+          <div *ngIf="text.touched && text.invalid">
+            <div *ngIf="text.errors.required">Text is required</div>
+          </div>
+        </div>
+        <div class="button-row">
+            <button class="post-btn" type="submit" [disabled]="blogPostForm.invalid">{{modalTitle}}</button>
+            <button class="post-btn" type="cancel" (click)="dismisModal('Cancel button click')">Cancel</button>
+        </div>
+      </form>
+</div>

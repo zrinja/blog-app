@@ -1,0 +1,37 @@
+.topbar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar-row-1 {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topbar-column-1 {
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.topbar-column-2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.topbar-search {
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-link {
+    padding: 0px 5px 0px 5px;
+}

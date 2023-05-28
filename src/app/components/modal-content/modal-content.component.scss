@@ -1,0 +1,40 @@
+.error-border {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.post-btn {
+    width: 100px;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.modal-container{
+    padding: 50px;
+}
+
+.label {
+    padding-right: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#title, #text {
+    width: 100%;
+}
+
+#text{
+    min-height: 200px;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

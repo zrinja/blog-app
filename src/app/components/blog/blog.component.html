@@ -1,0 +1,8 @@
+<div class="blog-container">
+    <div class="blog-column blog-column-1">
+        <app-blog-categories></app-blog-categories>
+    </div>
+    <div class="blog-column blog-column-2">
+        <app-post *ngFor="let post of blogPosts; let i = index" [post]="post" [index]="i"></app-post>
+    </div>
+</div>
